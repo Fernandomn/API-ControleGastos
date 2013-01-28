@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Controle de Gastos</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_cadastro_gastos">Cadastro de Gastos</string>
+    <string name="title_activity_cadastro_ganho">Cadastro de Ganho</string>
+    <string name="title_activity_visualiza_gastos">Visualizar Gastos</string>
+    <string name="title_activity_visualiza_ganhos">Visualizar Ganhos</string>
+    <string name="title_activity_alterar_saldo">Alterar o Saldo</string>
+    <string name="title_activity_nome_recurso">Nome do Recurso</string>
+    <string name="title_activity_relatorios">Relatorios</string>
+    <string name="btn_alterar_saldo">Alterar Saldo</string>
+    <string name="btn_cadastro_ganho">Cadastrar Ganho</string>
+    <string name="btn_cadastro_gasto">Cadastrar Gasto</string>
+    <string name="btn_relatorios">Relatorios</string>
+    <string name="btn_visualiza_ganhos">Visualizar Ganhos</string>
+    <string name="btn_visualiza_gastos">Visualizar Gastos</string>
+
+
+</resources>
