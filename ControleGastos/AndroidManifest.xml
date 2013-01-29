@@ -60,7 +60,11 @@
         </activity>
         <activity
             android:name="com.example.controlegastos.NomeRecurso"
-            android:label="@string/title_activity_nome_recurso" >
+            android:label="@string/title_activity_nome_recurso" 
+            android:parentActivityName="com.example.controlegastos.TelaPrincipal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.controlegastos.TelaPrincipal" />
         </activity>
         <activity
             android:name="com.example.controlegastos.Relatorios"

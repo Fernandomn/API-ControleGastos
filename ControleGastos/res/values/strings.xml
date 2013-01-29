@@ -16,6 +16,8 @@
     <string name="btn_relatorios">Relatorios</string>
     <string name="btn_visualiza_ganhos">Visualizar Ganhos</string>
     <string name="btn_visualiza_gastos">Visualizar Gastos</string>
+    <string name="txv_nome_recurso">Meu recurso</string>
+    <string name="txv_saldo">Saldo: R$</string>
 
 
 </resources>

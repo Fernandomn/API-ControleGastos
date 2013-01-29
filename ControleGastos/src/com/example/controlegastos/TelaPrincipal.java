@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
 
 public class TelaPrincipal extends Activity {
 
 	//Este metodo muda a Activity atual para a alvo. O parametro eh um enum. Se uma nova
 	//tela for adicionada, ela deve ser adicionada no enum Telas tambem.
+	public static int lsiSaldo = 0;
 	public void TrocaTela(Telas aoTela)
 	{
 		Intent intent;
@@ -43,6 +45,14 @@ public class TelaPrincipal extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_principal);
 	}
+	
+	/*@Override
+	public void onResume() {
+	    super.onResume();  // Always call the superclass method first
+	    EditText editText = (EditText) findViewById(R.id.txv_saldo);
+	    String saldo = editText.getText().toString();
+	    editText.setText(saldo+Integer.toString(lsiSaldo));	   
+	}*/ 
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
