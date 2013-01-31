@@ -18,6 +18,26 @@
     <string name="btn_visualiza_gastos">Visualizar Gastos</string>
     <string name="txv_nome_recurso">Meu recurso</string>
     <string name="txv_saldo">Saldo: R$</string>
+    <string name="txv_novo_saldo">Novo saldo</string>
+    <string name="edit_novo_valor">Informe o novo valor</string>
+    <string name="btn_confirma">Confirma</string>
+    
+    <string name="txv_nome_ganho">Nome do ganho</string>
+    <string name="txv_nome_gasto">Nome do gasto</string>
+    <string name="edit_nome_ganho">Informe o nome do ganho</string>
+    <string name="edit_nome_gasto">Informe o nome do gasto</string>
+    <string name="txv_valor">Valor</string>
+    <string name="edit_valor">Informe o valor</string>
+    <string name="txv_categoria">Categoria</string>
+    
+    <string-array name="categoria_array">
+        <item>Comida</item>
+        <item>Bebida</item>
+        <item>Lazer</item>
+        <item>Automóvel</item>
+        <item>Imposto</item>
+        <item>Conta</item>
+    </string-array>
 
 
 </resources>
