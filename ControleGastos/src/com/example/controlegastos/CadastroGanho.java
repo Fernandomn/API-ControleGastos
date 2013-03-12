@@ -1,13 +1,30 @@
 package com.example.controlegastos;
 
+
+
+import com.example.controlegastos.R;
+import com.example.controlegastos.R.id;
+import com.example.controlegastos.R.layout;
+import com.example.controlegastos.R.menu;
+
+import models.Operacoes;
+import DataBase.Database;
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
+@SuppressLint("NewApi")
 public class CadastroGanho extends Activity {
 
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -39,5 +56,24 @@ public class CadastroGanho extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	public void validar(View view){
+	    EditText editText = (EditText) findViewById(R.id.nome_ganho);
+	    String nome_ganho = editText.getText().toString();
+	    EditText editText2 = (EditText) findViewById(R.id.valor_ganho);
+	    String nome_valor = editText2.getText().toString();
+	    
+	   
+	    if (nome_ganho.equals("")||nome_valor.equals("")){
+	    	new AlertDialog.Builder(this).setTitle("Aviso").setMessage("Você esqueceu o a descricao ou o valor!").setNeutralButton("Close", null).show();
+	    }
+	    else{
+	    	float valor = Float.parseFloat(nome_valor);
+	    	Operacoes Nganho = new Operacoes(1,nome_ganho,valor,1);
+	    	Operacoes.insert(1,nome_ganho,valor,1);
+	    	Intent intent = new Intent(CadastroGanho.this, TelaPrincipal.class);    	
+	    	CadastroGanho.this.startActivity(intent);
+	    	CadastroGanho.this.finish();
 
+	    }
+	}
 }

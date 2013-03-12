@@ -1,5 +1,11 @@
 package com.example.controlegastos;
 
+import com.example.controlegastos.R;
+import com.example.controlegastos.R.array;
+import com.example.controlegastos.R.id;
+import com.example.controlegastos.R.layout;
+import com.example.controlegastos.R.menu;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Build;

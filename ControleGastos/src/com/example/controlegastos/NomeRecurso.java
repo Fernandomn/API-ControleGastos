@@ -1,5 +1,9 @@
 package com.example.controlegastos;
 
+import com.example.controlegastos.R;
+import com.example.controlegastos.R.layout;
+import com.example.controlegastos.R.menu;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;

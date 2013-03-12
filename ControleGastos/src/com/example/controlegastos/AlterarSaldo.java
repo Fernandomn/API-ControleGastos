@@ -1,14 +1,21 @@
 package com.example.controlegastos;
 
+import com.example.controlegastos.R;
+import com.example.controlegastos.R.layout;
+import com.example.controlegastos.R.menu;
+
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
 
+@SuppressLint("NewApi")
 public class AlterarSaldo extends Activity {
-
+	
 	@Override
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_alterar_saldo);
