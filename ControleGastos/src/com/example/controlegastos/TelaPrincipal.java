@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.Button;
 
 public class TelaPrincipal extends Activity {
 
@@ -45,14 +45,6 @@ public class TelaPrincipal extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_principal);
 	}
-	
-	/*@Override
-	public void onResume() {
-	    super.onResume();  // Always call the superclass method first
-	    EditText editText = (EditText) findViewById(R.id.txv_saldo);
-	    String saldo = editText.getText().toString();
-	    editText.setText(saldo+Integer.toString(lsiSaldo));	   
-	}*/ 
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -61,34 +53,8 @@ public class TelaPrincipal extends Activity {
 		return true;
 	}
 	
-	public void IrAlterarSaldo(View view)
-	{		
-		TrocaTela(Telas.AlterarSaldo);
+	public void IrOpcoes(View view)
+	{	
 	}
 	
-	public void IrCadastroGanho(View view)
-	{
-		TrocaTela(Telas.CadastroGanho);
-	}
-	
-	public void IrCadastroGasto(View view)
-	{
-		TrocaTela(Telas.CadastroGasto);
-	}
-	
-	public void IrRelatorios(View view)
-	{
-		TrocaTela(Telas.Relatorios);
-	}
-	
-	public void IrVisualizaGanhos(View view)
-	{
-		TrocaTela(Telas.VisualizaGanhos);
-	}
-	
-	public void IrVisualizaGastos(View view)
-	{
-		TrocaTela(Telas.VisualizaGastos);
-	}
-
 }
